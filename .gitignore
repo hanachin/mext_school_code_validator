@@ -4,6 +4,7 @@
 /coverage/
 /doc/
 /pkg/
+/spec/dummy/log/
 /spec/reports/
 /tmp/
 

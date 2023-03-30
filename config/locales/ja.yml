@@ -1,0 +1,8 @@
+ja:
+  errors:
+    messages:
+      mext_school_code_invalid_org_type: の設置区分が不正です(%{org_type})
+      mext_school_code_invalid_prefecture_no: の都道府県番号が不正です(%{prefecture_no})
+      mext_school_code_invalid_school_no: の学校番号が不正です(%{school_no})
+      mext_school_code_invalid_school_type: の学校種が不正です(%{school_type})
+      mext_school_code_invalid_check_digit: の検査数字が不正です(期待する値:%{expected} 実際の値:%{actual})

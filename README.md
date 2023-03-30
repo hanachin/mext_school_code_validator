@@ -1,8 +1,6 @@
 # MextSchoolCodeValidator
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/mext_school_code_validator`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+[文科省学校コード](https://www.mext.go.jp/b_menu/toukei/mext_01087.html)のバリデーター
 
 ## Installation
 
@@ -22,7 +20,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+class School
+  include ActiveModel::API
+
+  attr_accessor :mext_school_code
+
+  validates :mext_school_code, mext_school_code: true
+end
+```
 
 ## Development
 
