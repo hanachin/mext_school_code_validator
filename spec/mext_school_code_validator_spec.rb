@@ -65,6 +65,10 @@ RSpec.describe MextSchoolCodeValidator, type: :model do
     の学校番号が不正です(0123456)
   MESSAGE
 
+  it { is_expected.not_to allow_value("A1011123456x8").for(:mext_school_code).with_message(<<~MESSAGE.chomp) }
+    の学校番号が不正です(123456x)
+  MESSAGE
+
   it { is_expected.not_to allow_value("F139190110519").for(:mext_school_code).with_message(<<~MESSAGE.chomp) }
     の検査数字が不正です(期待する値:5 実際の値:9)
   MESSAGE

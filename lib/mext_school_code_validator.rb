@@ -12,6 +12,7 @@ class MextSchoolCodeValidator < ActiveModel::EachValidator
   }.freeze
   VALID_ORG_TYPE_REGEXP = /[123]/.freeze
   VALID_PREFECTURE_NO_REGEXP = /..(?:0[1-9]|(?:[1-3][0-9])|(?:4[0-7]))/.freeze
+  VALID_SCHOOL_NO_REGEXP = /[1-9][0-9]{6}/.freeze
   VALID_SCHOOL_TYPE_REGEXP = /A1|A2|B1|C1|C2|D1|D2|E1|F1|F2|G1|H1|H2/.freeze
 
   def validate_each(record, attribute, value) # rubocop:disable Metrics/AbcSize, Metrics/CyclomaticComplexity, Metrics/MethodLength, Metrics/PerceivedComplexity
@@ -30,7 +31,7 @@ class MextSchoolCodeValidator < ActiveModel::EachValidator
     elsif !value[4].match?(VALID_ORG_TYPE_REGEXP)
       message = (options[:message] || :mext_school_code_invalid_org_type)
       record.errors.add(attribute, message, org_type: value[4])
-    elsif value[5] == "0"
+    elsif !value[5, 7].match?(VALID_SCHOOL_NO_REGEXP)
       message = (options[:message] || :mext_school_code_invalid_school_no)
       record.errors.add(attribute, message, school_no: value[5, 7])
     elsif calculate_check_digit(value).to_s != value[-1]
