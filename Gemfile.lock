@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    mext_school_code_validator (1.0.0)
+    mext_school_code_validator (1.0.1)
       activemodel
 
 GEM

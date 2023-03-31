@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name = "mext_school_code_validator"
-  spec.version = "1.0.0"
+  spec.version = "1.0.1"
   spec.authors = ["Seiei Miyagi"]
   spec.email = ["hanachin@gmail.com"]
 
