@@ -3,6 +3,7 @@
 RSpec.describe MextSchoolCodeValidator, type: :model do
   subject { School.new }
 
+  # dummy
   it { is_expected.to allow_value("F139190110515").for(:mext_school_code) }
   it { is_expected.to allow_value("F139290110531").for(:mext_school_code) }
   it { is_expected.to allow_value("F139290000026").for(:mext_school_code) }
@@ -32,6 +33,75 @@ RSpec.describe MextSchoolCodeValidator, type: :model do
   it { is_expected.to allow_value("A239290000106").for(:mext_school_code) }
   it { is_expected.to allow_value("A239390000104").for(:mext_school_code) }
   it { is_expected.to allow_value("C239290000059").for(:mext_school_code) }
+
+  # school type
+  it { is_expected.to allow_value("A101210000010").for(:mext_school_code) }
+  it { is_expected.to allow_value("A201210000019").for(:mext_school_code) }
+  it { is_expected.to allow_value("B101210000018").for(:mext_school_code) }
+  it { is_expected.to allow_value("C101210000016").for(:mext_school_code) }
+  it { is_expected.to allow_value("C201210000015").for(:mext_school_code) }
+  it { is_expected.to allow_value("D101210000014").for(:mext_school_code) }
+  it { is_expected.to allow_value("D201210000013").for(:mext_school_code) }
+  it { is_expected.to allow_value("E101210000011").for(:mext_school_code) }
+  it { is_expected.to allow_value("F101210000019").for(:mext_school_code) }
+  it { is_expected.to allow_value("F201210000018").for(:mext_school_code) }
+  it { is_expected.to allow_value("G101210000017").for(:mext_school_code) }
+  it { is_expected.to allow_value("H101210000015").for(:mext_school_code) }
+  it { is_expected.to allow_value("H201210000014").for(:mext_school_code) }
+
+  # prefecture no
+  it { is_expected.to allow_value("B101210000009").for(:mext_school_code) }
+  it { is_expected.to allow_value("B102210000008").for(:mext_school_code) }
+  it { is_expected.to allow_value("B103210000007").for(:mext_school_code) }
+  it { is_expected.to allow_value("B104210000006").for(:mext_school_code) }
+  it { is_expected.to allow_value("B105210000005").for(:mext_school_code) }
+  it { is_expected.to allow_value("B106210000004").for(:mext_school_code) }
+  it { is_expected.to allow_value("B107210000003").for(:mext_school_code) }
+  it { is_expected.to allow_value("B108210000002").for(:mext_school_code) }
+  it { is_expected.to allow_value("B109210000001").for(:mext_school_code) }
+  it { is_expected.to allow_value("B110210000008").for(:mext_school_code) }
+  it { is_expected.to allow_value("B111210000007").for(:mext_school_code) }
+  it { is_expected.to allow_value("B112210000006").for(:mext_school_code) }
+  it { is_expected.to allow_value("B113210000005").for(:mext_school_code) }
+  it { is_expected.to allow_value("B114210000004").for(:mext_school_code) }
+  it { is_expected.to allow_value("B115210000003").for(:mext_school_code) }
+  it { is_expected.to allow_value("B116210000002").for(:mext_school_code) }
+  it { is_expected.to allow_value("B117210000001").for(:mext_school_code) }
+  it { is_expected.to allow_value("B118210000000").for(:mext_school_code) }
+  it { is_expected.to allow_value("B119210000009").for(:mext_school_code) }
+  it { is_expected.to allow_value("B120210000006").for(:mext_school_code) }
+  it { is_expected.to allow_value("B121210000005").for(:mext_school_code) }
+  it { is_expected.to allow_value("B122210000004").for(:mext_school_code) }
+  it { is_expected.to allow_value("B123210000003").for(:mext_school_code) }
+  it { is_expected.to allow_value("B124210000002").for(:mext_school_code) }
+  it { is_expected.to allow_value("B125210000001").for(:mext_school_code) }
+  it { is_expected.to allow_value("B126210000000").for(:mext_school_code) }
+  it { is_expected.to allow_value("B127210000009").for(:mext_school_code) }
+  it { is_expected.to allow_value("B128210000008").for(:mext_school_code) }
+  it { is_expected.to allow_value("B129210000007").for(:mext_school_code) }
+  it { is_expected.to allow_value("B130210000004").for(:mext_school_code) }
+  it { is_expected.to allow_value("B131210000003").for(:mext_school_code) }
+  it { is_expected.to allow_value("B132210000002").for(:mext_school_code) }
+  it { is_expected.to allow_value("B133210000001").for(:mext_school_code) }
+  it { is_expected.to allow_value("B134210000000").for(:mext_school_code) }
+  it { is_expected.to allow_value("B135210000009").for(:mext_school_code) }
+  it { is_expected.to allow_value("B136210000008").for(:mext_school_code) }
+  it { is_expected.to allow_value("B137210000007").for(:mext_school_code) }
+  it { is_expected.to allow_value("B138210000006").for(:mext_school_code) }
+  it { is_expected.to allow_value("B139210000005").for(:mext_school_code) }
+  it { is_expected.to allow_value("B140210000002").for(:mext_school_code) }
+  it { is_expected.to allow_value("B141210000001").for(:mext_school_code) }
+  it { is_expected.to allow_value("B142210000000").for(:mext_school_code) }
+  it { is_expected.to allow_value("B143210000009").for(:mext_school_code) }
+  it { is_expected.to allow_value("B144210000008").for(:mext_school_code) }
+  it { is_expected.to allow_value("B145210000007").for(:mext_school_code) }
+  it { is_expected.to allow_value("B146210000006").for(:mext_school_code) }
+  it { is_expected.to allow_value("B147210000005").for(:mext_school_code) }
+
+  # org type
+  it { is_expected.to allow_value("B101110000029").for(:mext_school_code) }
+  it { is_expected.to allow_value("B101210000027").for(:mext_school_code) }
+  it { is_expected.to allow_value("B101310000025").for(:mext_school_code) }
 
   it { is_expected.not_to allow_value("foo").for(:mext_school_code).with_message(<<~MESSAGE.chomp) }
     is the wrong length (should be 13 characters)
