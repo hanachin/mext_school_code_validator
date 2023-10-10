@@ -14,8 +14,8 @@ Gem::Specification.new do |spec|
 
   spec.metadata["allowed_push_host"] = "https://rubygems.org/"
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/hanachin/mext_school_code_validator/blob/#{spec.version}"
-  spec.metadata["changelog_uri"] = "https://github.com/hanachin/mext_school_code_validator/blob/#{spec.version}/CHANGELOG.md"
+  spec.metadata["source_code_uri"] = "https://github.com/hanachin/mext_school_code_validator/blob/v#{spec.version}"
+  spec.metadata["changelog_uri"] = "https://github.com/hanachin/mext_school_code_validator/blob/v#{spec.version}/CHANGELOG.md"
   spec.metadata["rubygems_mfa_required"] = "true"
 
   # Specify which files should be added to the gem when it is released.
